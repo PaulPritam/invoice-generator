@@ -1,7 +1,7 @@
 public class InvoiceGenerator {
-    private double MinimumCostPerKM = 10;
-    private int CostPerMinute = 1;
-    private double MinimumFare = 5;
+    private static final double MinimumCostPerKM = 10;
+    private static final int CostPerMinute = 1;
+    private static final double MinimumFare = 5;
 
 
     public double calculateFare(double distance, int time) {
@@ -19,6 +19,6 @@ public class InvoiceGenerator {
         {
             totalFare = totalFare + this.calculateFare(ride.distance, ride.time);
         }
-        return null;
+        return new InvoiceSummary(rides.length, totalFare);
     }
 }
