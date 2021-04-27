@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T11:56:58" hostname="Sankeths-MacBook-Air.local" time="0.033">
+<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T12:00:55" hostname="Sankeths-MacBook-Air.local" time="0.04">
   <properties/>
-  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary()" classname="InvoiceServiceTest" time="0.033">
+  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary()" classname="InvoiceServiceTest" time="0.04">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at InvoiceServiceTest.givenMultipleRides_ShouldReturnInvoiceSummary(InvoiceServiceTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
