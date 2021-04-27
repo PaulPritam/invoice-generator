@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T09:01:41" hostname="LAPTOP-K3F64RFE" time="0.055">
+<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T11:56:58" hostname="Sankeths-MacBook-Air.local" time="0.033">
   <properties/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="InvoiceServiceTest" time="0.055">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;30.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;30.0&gt; but was: &lt;0.0&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:81)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:993)
-	at InvoiceServiceTest.givenMultipleRides_ShouldReturnTotalFare(InvoiceServiceTest.java:31)
+  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary()" classname="InvoiceServiceTest" time="0.033">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at InvoiceServiceTest.givenMultipleRides_ShouldReturnInvoiceSummary(InvoiceServiceTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
