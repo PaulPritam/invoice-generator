@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T06:46:53" hostname="Sankeths-MacBook-Air.local" time="0.077">
+<testsuite name="InvoiceServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-27T09:01:41" hostname="LAPTOP-K3F64RFE" time="0.055">
   <properties/>
-  <testcase name="givenMinimumDistanceOrTime_ShouldReturnMinimumFare()" classname="InvoiceServiceTest" time="0.077">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;5.0&gt; but was: &lt;2.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;5.0&gt; but was: &lt;2.0&gt;
+  <testcase name="givenMultipleRides_ShouldReturnTotalFare()" classname="InvoiceServiceTest" time="0.055">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;30.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;30.0&gt; but was: &lt;0.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:81)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:993)
-	at InvoiceServiceTest.givenMinimumDistanceOrTime_ShouldReturnMinimumFare(InvoiceServiceTest.java:22)
+	at InvoiceServiceTest.givenMultipleRides_ShouldReturnTotalFare(InvoiceServiceTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

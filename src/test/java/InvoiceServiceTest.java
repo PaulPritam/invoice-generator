@@ -6,7 +6,7 @@ public class InvoiceServiceTest {
 
     @Test
     void givenDistanceAndTime_ShouldReturnTotalFare() {
-        InvoiceGenerator invoiceGenerator =  new InvoiceGenerator();
+        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         double distance = 2.0;
         int time = 5;
         double fare = invoiceGenerator.calculateFare(distance, time);
@@ -20,5 +20,16 @@ public class InvoiceServiceTest {
         int time = 1;
         double fare = invoiceGenerator.calculateFare(distance, time);
         Assertions.assertEquals(5, fare, 0.0);
+    }
+
+    @Test
+    void givenMultipleRides_ShouldReturnTotalFare() {
+        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+        Ride[] rides = {new Ride(2.0, 5),
+                new Ride(0.1, 1)
+        };
+        double fare = invoiceGenerator.calculateFare(rides);
+        Assertions.assertEquals(30, fare, 0.0);
+
     }
 }
