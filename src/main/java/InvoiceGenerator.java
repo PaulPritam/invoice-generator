@@ -3,6 +3,7 @@ public class InvoiceGenerator {
     private int CostPerMinute = 1;
     private double MinimumFare = 5;
 
+
     public double calculateFare(double distance, int time) {
         double totalFare = distance * MinimumCostPerKM + time * CostPerMinute;
         if(totalFare<MinimumFare)
@@ -10,11 +11,14 @@ public class InvoiceGenerator {
             return MinimumFare;
         }
         return totalFare;
-    }
 
+    }
     public double calculateFare(Ride[] rides) {
-
-        return 0;
+        double totalFare = 0;
+        for (Ride ride : rides)
+        {
+            totalFare = totalFare + this.calculateFare(ride.distance, ride.time);
+        }
+        return totalFare;
     }
-
 }
