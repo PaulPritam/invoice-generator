@@ -4,5 +4,3 @@ InvoiceGenerator.java
  InvoiceGenerator
 InvoiceSummary.java
  InvoiceSummary
-None.java
- None
